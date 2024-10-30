@@ -31,6 +31,7 @@ class UserAdapter( var list : ArrayList<User>):RecyclerView.Adapter<UserAdapter.
         holder.onBind(list[position], position)
     }
 
+
     override fun onItemMove(fromPosition: Int, toPosition: Int) {
         if ( fromPosition<toPosition){
             for (i in fromPosition until toPosition)
